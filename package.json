@@ -1,26 +1,87 @@
 {
-  "name": "react-navigation-tabs",
-  "version": "2.7.0",
-  "description": "Tab Navigation components for React Navigation",
-  "main": "lib/commonjs/index.js",
-  "module": "lib/module/index.js",
-  "react-native": "lib/module/index.js",
-  "types": "lib/typescript/src/index.d.ts",
-  "files": [
-    "src",
-    "lib"
-  ],
-  "scripts": {
-    "test": "jest",
-    "typescript": "tsc --noEmit",
-    "lint": "eslint --ext .js,.ts,.tsx .",
-    "bootstrap": "yarn --cwd example && yarn",
-    "example": "yarn --cwd example",
-    "release": "yarn release-it",
-    "prepare": "bob build"
+  "_from": "react-navigation-tabs@0.8.4",
+  "_id": "react-navigation-tabs@0.8.4",
+  "_inBundle": false,
+  "_location": "/react-navigation-tabs",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "react-navigation-tabs@0.8.4",
+    "name": "react-navigation-tabs",
+    "escapedName": "react-navigation-tabs",
+    "rawSpec": "0.8.4",
+    "saveSpec": null,
+    "fetchSpec": "0.8.4"
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-navigation-tabs/-/react-navigation-tabs-0.8.4.tgz",
+  "_shasum": "aa767f28b899f13c99f2b034b4a665f8cf0a5737",
+  "_spec": "react-navigation-tabs@0.8.4",
+  "_where": "C:\\Users\\Matheus\\Desktop\\CD\\tab-view",
+  "author": {
+    "name": "Satyajit Sahoo",
+    "email": "satyajit.happy@gmail.com",
+    "url": "https://github.com/satya164/"
+  },
+  "bugs": {
+    "url": "https://github.com/react-navigation/react-navigation-tabs/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "hoist-non-react-statics": "^2.5.0",
+    "prop-types": "^15.6.1",
+    "react-lifecycles-compat": "^3.0.4",
+    "react-native-tab-view": "git+https://github.com/MatheusSfalsin/react-native-tab-view.git#fix/1.0.0"
+  },
+  "deprecated": false,
+  "description": "Tab Navigation components for React Navigation",
+  "devDependencies": {
+    "@expo/vector-icons": "^6.2.0",
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-plugin-syntax-class-properties": "^6.13.0",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-react-native": "^4.0.0",
+    "enzyme": "3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "enzyme-to-json": "^3.2.2",
+    "eslint": "^4.12.1",
+    "eslint-config-satya164": "^1.0.1",
+    "eslint-plugin-react-native-globals": "^0.1.0",
+    "flow-bin": "~0.67.0",
+    "husky": "^0.14.3",
+    "jest": "^21.2.1",
+    "prettier": "^1.8.2",
+    "react": "16.3.1",
+    "react-dom": "16.3.1",
+    "react-native": "~0.55.4",
+    "react-navigation": "^2.1.0",
+    "react-test-renderer": "16.2.0"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "createBottomTabNavigator.js",
+    "createMaterialTopTabNavigator.js"
+  ],
+  "homepage": "https://github.com/react-navigation/react-navigation-tabs#readme",
+  "jest": {
+    "preset": "react-native",
+    "setupFiles": [
+      "<rootDir>/__setup__/enzyme.js"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/example/node_modules"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "keywords": [
     "react-native-component",
@@ -33,86 +94,27 @@
     "scrollable",
     "coverflow"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/react-navigation/tabs.git"
-  },
-  "author": "Satyajit Sahoo <satyajit.happy@gmail.com> (https://github.com/satya164/)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/react-navigation/tabs/issues"
-  },
-  "homepage": "https://github.com/react-navigation/tabs#readme",
-  "dependencies": {
-    "hoist-non-react-statics": "^3.3.0",
-    "react-lifecycles-compat": "^3.0.4",
-    "react-native-safe-area-view": "^0.14.6",
-    "react-native-tab-view": "^2.11.0"
-  },
-  "devDependencies": {
-    "@commitlint/config-conventional": "^7.5.0",
-    "@expo/vector-icons": "^10.0.1",
-    "@react-native-community/bob": "^0.6.1",
-    "@types/hoist-non-react-statics": "^3.3.1",
-    "@types/react": "^16.8.17",
-    "@types/react-native": "^0.57.57",
-    "babel-jest": "^24.5.0",
-    "commitlint": "^7.5.2",
-    "conventional-changelog-cli": "^2.0.12",
-    "enzyme": "3.9.0",
-    "enzyme-adapter-react-16": "^1.11.2",
-    "enzyme-to-json": "^3.2.2",
-    "eslint": "^6.5.1",
-    "eslint-config-satya164": "^3.1.2",
-    "eslint-plugin-react-native-globals": "^0.1.0",
-    "flow-bin": "~0.78.0",
-    "husky": "^1.3.1",
-    "jest": "^24.5.0",
-    "prettier": "^1.18.2",
-    "react": "16.5.0",
-    "react-dom": "16.5.0",
-    "react-native": "~0.57.1",
-    "react-native-gesture-handler": "^1.4.1",
-    "react-native-reanimated": "^1.2.0",
-    "react-navigation": "^4.0.7",
-    "react-test-renderer": "16.5.0",
-    "release-it": "^10.3.1",
-    "typescript": "^3.5.2"
-  },
+  "main": "dist/index.js",
+  "name": "react-navigation-tabs",
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
-    "react-native-gesture-handler": "^1.0.0",
-    "react-native-reanimated": "^1.0.0-alpha",
-    "react-native-screens": "^1.0.0 || ^1.0.0-alpha",
-    "react-navigation": "^4.0.7"
+    "react-navigation": "^2.0.0",
+    "react-native-screens": "^1.0.0 || ^1.0.0-alpha"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn lint && yarn flow check"
-    }
+  "react-native": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-navigation/react-navigation-tabs.git"
   },
-  "jest": {
-    "preset": "react-native",
-    "setupFiles": [
-      "<rootDir>/__setup__/enzyme.js"
-    ],
-    "modulePathIgnorePatterns": [
-      "<rootDir>/example/node_modules",
-      "<rootDir>/lib/"
-    ],
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
+  "scripts": {
+    "build": "babel --no-babelrc --plugins=syntax-jsx,syntax-class-properties,syntax-object-rest-spread,transform-flow-strip-types src --out-dir dist --ignore '**/__tests__/**'",
+    "flow": "flow",
+    "lint": "eslint .",
+    "precommit": "yarn lint && yarn flow && yarn test",
+    "prepare": "yarn build",
+    "test": "jest"
   },
-  "@react-native-community/bob": {
-    "source": "src",
-    "output": "lib",
-    "targets": [
-      "commonjs",
-      "module",
-      "typescript"
-    ]
-  }
+  "version": "0.8.4"
 }
