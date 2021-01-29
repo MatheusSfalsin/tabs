@@ -35,7 +35,7 @@
     "hoist-non-react-statics": "^2.5.0",
     "prop-types": "^15.6.1",
     "react-lifecycles-compat": "^3.0.4",
-    "react-native-tab-view": "git+https://github.com/MatheusSfalsin/react-native-tab-view.git#fix/1.0.0"
+    "react-native-tab-view": "git+https://github.com/MatheusSfalsin/react-native-tab-view.git#fix/1.4.1"
   },
   "deprecated": false,
   "description": "Tab Navigation components for React Navigation",
